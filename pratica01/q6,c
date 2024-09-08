@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+
+  int a,b,c;
+  printf("valor de 'a':");
+  scanf("%i", &a);
+  printf("valor de 'b':");
+  scanf("%i", &b);
+  printf("valor de 'c':");
+  scanf("%i", &c);
+
+  int delta = b*b - 4*a*c;
+  float x1 = (-b + sqrt(delta))/2*a;
+  float x2 = (-b - sqrt(delta))/2*a;
+  
+  printf("as raízes da equação são %f e %f\n", x1, x2);
+  
+  return 0;
+  
+}
